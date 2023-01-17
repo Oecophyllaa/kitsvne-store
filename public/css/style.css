@@ -191,7 +191,8 @@ ol {
     font-weight: 700;
     padding: 12px 30px;
     color: #ffffff;
-    background: #e7ab3c;
+    /* background: #e7ab3c; */
+    background: #252525;
     text-transform: uppercase;
 }
 
@@ -834,7 +835,8 @@ ol {
 }
 
 .hero-items .single-hero-items span {
-    color: #e7ab3c;
+    /* color: #e7ab3c; */
+    color: #fff;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 2px;
