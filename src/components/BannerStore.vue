@@ -7,7 +7,7 @@
           <carousel class="product-slider" :items="3" :dots="false" :nav="false" :autoplay="true">
             <div class="product-item">
               <div class="pi-pic">
-                <img src="img/mickey1.jpg" alt="" />
+                <img src="img/products/shirt-1.jpg" alt="" />
                 <ul>
                   <li class="w-icon active">
                     <a href="#"><i class="icon_bag_alt"></i></a>
@@ -16,9 +16,9 @@
                 </ul>
               </div>
               <div class="pi-text">
-                <div class="catagory-name">Coat</div>
+                <div class="catagory-name">Shirt</div>
                 <a href="#">
-                  <h5>Mickey Baggy</h5>
+                  <h5>Sweatshirt Anime</h5>
                 </a>
                 <div class="product-price">
                   $14.00
@@ -28,7 +28,7 @@
             </div>
             <div class="product-item">
               <div class="pi-pic">
-                <img src="img/products/women-2.jpg" alt="" />
+                <img src="img/products/anime-1.jpg" alt="" />
                 <ul>
                   <li class="w-icon active">
                     <a href="#"><i class="icon_bag_alt"></i></a>
@@ -37,16 +37,16 @@
                 </ul>
               </div>
               <div class="pi-text">
-                <div class="catagory-name">Shoes</div>
+                <div class="catagory-name">Sweater</div>
                 <a href="#">
-                  <h5>Guangzhou sweater</h5>
+                  <h5>Akiba Sweater</h5>
                 </a>
                 <div class="product-price">$13.00</div>
               </div>
             </div>
             <div class="product-item">
               <div class="pi-pic">
-                <img src="img/products/women-3.jpg" alt="" />
+                <img src="img/products/vocaloid-1.jpg" alt="" />
                 <ul>
                   <li class="w-icon active">
                     <a href="#"><i class="icon_bag_alt"></i></a>
@@ -55,16 +55,16 @@
                 </ul>
               </div>
               <div class="pi-text">
-                <div class="catagory-name">Towel</div>
+                <div class="catagory-name">Shirt</div>
                 <a href="#">
-                  <h5>Pure Pineapple</h5>
+                  <h5>Vocaloid Shirt</h5>
                 </a>
                 <div class="product-price">$34.00</div>
               </div>
             </div>
             <div class="product-item">
               <div class="pi-pic">
-                <img src="img/products/women-4.jpg" alt="" />
+                <img src="img/products/black-1.jpg" alt="" />
                 <ul>
                   <li class="w-icon active">
                     <a href="#"><i class="icon_bag_alt"></i></a>
@@ -76,9 +76,9 @@
                 </ul>
               </div>
               <div class="pi-text">
-                <div class="catagory-name">Towel</div>
+                <div class="catagory-name">Shirt</div>
                 <a href="#">
-                  <h5>Converse Shoes</h5>
+                  <h5>Black Shirt</h5>
                 </a>
                 <div class="product-price">$34.00</div>
               </div>

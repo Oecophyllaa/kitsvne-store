@@ -9,9 +9,9 @@
               <a href="#"><img src="img/logo_website_shayna_white.png" alt="" /></a>
             </div>
             <ul>
-              <li>Address: Setra Duta, Bandung</li>
+              <li>Address: Plaza Sentra, Sidoarjo</li>
               <li>Phone: +628 22081996</li>
-              <li>Email: hello.shayna@gmail.com</li>
+              <li>Email: mushi.apparel@gmail.com</li>
             </ul>
             <div class="footer-social">
               <a href="#"><i class="fa fa-facebook"></i></a>
