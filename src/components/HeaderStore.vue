@@ -15,7 +15,7 @@
           <div class="col-lg-2 col-md-2">
             <div class="logo">
               <a href="./index.html">
-                <img src="img/logo_website_shayna.png" alt="" />
+                <img src="img/logo_website_mushi.png" alt="" />
               </a>
             </div>
           </div>
