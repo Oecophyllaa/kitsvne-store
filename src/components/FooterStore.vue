@@ -6,12 +6,12 @@
         <div class="col-lg-5">
           <div class="footer-left">
             <div class="footer-logo">
-              <a href="#"><img src="img/logo_website_mushi_white.png" alt="" /></a>
+              <a href="#"><img src="img/logo_kitsvne2_white.png" alt="" /></a>
             </div>
             <ul>
               <li>Address: Plaza Sentra, Sidoarjo</li>
               <li>Phone: +628 22081996</li>
-              <li>Email: mushi.apparel@gmail.com</li>
+              <li>Email: kitsvne.store@gmail.com</li>
             </ul>
             <div class="footer-social">
               <a href="#"><i class="fa fa-facebook"></i></a>
@@ -49,7 +49,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="copyright-text">Copyright &copy; 2023 All rights reserved | Mushi</div>
+            <div class="copyright-text">Copyright &copy; 2023 All rights reserved | Kitsvne</div>
           </div>
         </div>
       </div>

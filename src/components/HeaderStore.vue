@@ -4,7 +4,7 @@
     <div class="header-top">
       <div class="container">
         <div class="ht-left">
-          <div class="mail-service"><i class="fa fa-envelope"></i> mushi.apparel@gmail.com</div>
+          <div class="mail-service"><i class="fa fa-envelope"></i> kitsvne.store@gmail.com</div>
           <div class="phone-service"><i class="fa fa-phone"></i> +628 22081996</div>
         </div>
       </div>
@@ -15,7 +15,7 @@
           <div class="col-lg-2 col-md-2">
             <div class="logo">
               <a href="./index.html">
-                <img src="img/logo_website_mushi.png" alt="" />
+                <img src="img/logo_kitsvne2.png" alt="" />
               </a>
             </div>
           </div>
