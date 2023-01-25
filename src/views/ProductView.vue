@@ -2,7 +2,7 @@
   <div class="product">
     <HeaderStore />
     <!-- Breadcrumb Section Begin -->
-    <div class="breacrumb-section">
+    <div class="breacrumb-section text-left">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -24,30 +24,26 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="product-pic-zoom">
-                  <img class="product-big-img" src="img/products/mickey1.jpg" alt="" />
+                  <img class="product-big-img" :src="default_img" alt="" />
                 </div>
                 <div class="product-thumbs">
-                  <carousel class="product-thumbs-track ps-slider" :dots="false" :nav="false" :autoplay="true" :loop="true">
-                    <div class="pt active" data-imgbigurl="img/products/mickey1.jpg">
-                      <img src="img/products/mickey1.jpg" alt="" />
+                  <carousel class="product-thumbs-track ps-slider" :dots="false" :nav="false">
+                    <div class="pt active" data-imgbigurl="img/products/vocaloid-1.jpg">
+                      <img src="img/products/vocaloid-1.jpg" alt="" />
                     </div>
 
-                    <div class="pt" data-imgbigurl="img/products/mickey2.jpg">
-                      <img src="img/products/mickey2.jpg" alt="" />
+                    <div class="pt" data-imgbigurl="img/products/vocaloid-2.jpg">
+                      <img src="img/products/vocaloid-2.jpg" alt="" />
                     </div>
 
-                    <div class="pt" data-imgbigurl="img/products/mickey3.jpg">
-                      <img src="img/products/mickey3.jpg" alt="" />
-                    </div>
-
-                    <div class="pt" data-imgbigurl="img/products/mickey4.jpg">
-                      <img src="img/products/mickey4.jpg" alt="" />
+                    <div class="pt" data-imgbigurl="img/products/vocaloid-3.jpg">
+                      <img src="img/products/vocaloid-3.jpg" alt="" />
                     </div>
                   </carousel>
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="product-details">
+                <div class="product-details text-left">
                   <div class="pd-title">
                     <span>oranges</span>
                     <h3>Pure Pineapple</h3>
@@ -90,6 +86,11 @@ export default {
     HeaderStore,
     FooterStore,
     carousel,
+  },
+  data() {
+    return {
+      default_img: "img/products/vocaloid-1.jpg",
+    };
   },
 };
 </script>
