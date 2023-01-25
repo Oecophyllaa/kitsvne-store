@@ -28,15 +28,15 @@
                 </div>
                 <div class="product-thumbs">
                   <carousel class="product-thumbs-track ps-slider" :dots="false" :nav="false">
-                    <div class="pt active" data-imgbigurl="img/products/vocaloid-1.jpg">
+                    <div class="pt" @click="changeImg(thumbs[0])" :class="thumbs[0] == default_img ? 'active' : ''">
                       <img src="img/products/vocaloid-1.jpg" alt="" />
                     </div>
 
-                    <div class="pt" data-imgbigurl="img/products/vocaloid-2.jpg">
+                    <div class="pt" @click="changeImg(thumbs[1])" :class="thumbs[1] == default_img ? 'active' : ''">
                       <img src="img/products/vocaloid-2.jpg" alt="" />
                     </div>
 
-                    <div class="pt" data-imgbigurl="img/products/vocaloid-3.jpg">
+                    <div class="pt" @click="changeImg(thumbs[2])" :class="thumbs[2] == default_img ? 'active' : ''">
                       <img src="img/products/vocaloid-3.jpg" alt="" />
                     </div>
                   </carousel>
@@ -90,7 +90,13 @@ export default {
   data() {
     return {
       default_img: "img/products/vocaloid-1.jpg",
+      thumbs: ["img/products/vocaloid-1.jpg", "img/products/vocaloid-2.jpg", "img/products/vocaloid-3.jpg"],
     };
+  },
+  methods: {
+    changeImg(src) {
+      this.default_img = src;
+    },
   },
 };
 </script>
