@@ -59,7 +59,7 @@
                     <h4>$495.00</h4>
                   </div>
                   <div class="quantity">
-                    <a href="shopping-cart.html" class="primary-btn pd-cart">Add To Cart</a>
+                    <router-link to="/cart" class="primary-btn pd-cart">Add To Cart</router-link>
                   </div>
                 </div>
               </div>
@@ -69,14 +69,14 @@
       </div>
     </section>
     <!-- Product Shop Section End -->
+    <RelatedProduct />
     <FooterStore />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
 import HeaderStore from "@/components/HeaderStore.vue";
+import RelatedProduct from "@/components/RelatedProduct.vue";
 import FooterStore from "@/components/FooterStore.vue";
 import carousel from "vue-owl-carousel";
 
@@ -84,6 +84,7 @@ export default {
   name: "ProductView",
   components: {
     HeaderStore,
+    RelatedProduct,
     FooterStore,
     carousel,
   },
