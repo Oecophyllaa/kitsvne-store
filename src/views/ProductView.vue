@@ -41,13 +41,13 @@
                     <h3>{{ productDetails.name }}</h3>
                   </div>
                   <div class="pd-desc">
-                    <p>
-                      {{ productDetails.description }}
-                    </p>
+                    <p v-html="productDetails.description"></p>
                     <h4>${{ productDetails.price }}</h4>
                   </div>
                   <div class="quantity">
-                    <router-link to="/cart" class="primary-btn pd-cart">Add To Cart</router-link>
+                    <!-- <router-link to="/cart"> -->
+                    <a @click="saveKeranjang(productDetails.id, productDetails.name, productDetails.price, productDetails.galleries[0].photo)" href="#" class="primary-btn pd-cart">Add To Cart</a>
+                    <!-- </router-link> -->
                   </div>
                 </div>
               </div>
@@ -80,8 +80,8 @@ export default {
   data() {
     return {
       default_img: "",
-      thumbs: ["img/products/vocaloid-1.jpg", "img/products/vocaloid-2.jpg", "img/products/vocaloid-3.jpg"],
       productDetails: [],
+      keranjangUser: [],
     };
   },
   methods: {
@@ -94,8 +94,27 @@ export default {
       // replace value img_default dgn data dari API (galleries)
       this.default_img = data.galleries[0].photo;
     },
+    saveKeranjang(id, name, price, img) {
+      var productStored = {
+        id: id,
+        name: name,
+        price: price,
+        img: img,
+      };
+
+      this.keranjangUser.push(productStored);
+      const parsed = JSON.stringify(this.keranjangUser);
+      localStorage.setItem("keranjangUser", parsed);
+    },
   },
   mounted() {
+    if (localStorage.getItem("keranjangUser")) {
+      try {
+        this.keranjangUser = JSON.parse(localStorage.getItem("keranjangUser"));
+      } catch (e) {
+        localStorage.removeItem("keranjangUser");
+      }
+    }
     axios
       .get("http://127.0.0.1:8000/api/products", {
         params: {
