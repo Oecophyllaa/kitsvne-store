@@ -38,11 +38,11 @@
                           </td>
                           <td class="si-text">
                             <div class="product-selected">
-                              <p>${{ keranjang.price }} x 1</p>
+                              <p>Rp {{ keranjang.price }} x 1</p>
                               <h6>{{ keranjang.name }}</h6>
                             </div>
                           </td>
-                          <td @click="removeItem(keranjangUser.index)" class="si-close">
+                          <td @click="removeItem(keranjang.id)" class="si-close">
                             <i class="ti-close"></i>
                           </td>
                         </tr>
@@ -56,10 +56,10 @@
                   </div>
                   <div class="select-total">
                     <span>total:</span>
-                    <h5>$120.00</h5>
+                    <h5>Rp {{ totalHarga }}</h5>
                   </div>
                   <div class="select-button">
-                    <a href="#" class="primary-btn view-card">VIEW CARD</a>
+                    <router-link to="/cart" class="primary-btn view-card">VIEW CARD</router-link>
                     <a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
                   </div>
                 </div>
@@ -82,10 +82,17 @@ export default {
     };
   },
   methods: {
-    removeItem(index) {
-      this.keranjangUser.splice(index);
+    removeItem(idx) {
+      // cari tahu id dari item yg akan dihapus
+      let keranjangUserStorage = JSON.parse(localStorage.getItem("keranjangUser"));
+      let itemKeranjangUserStorage = keranjangUserStorage.map((itemKeranjangUserStorage) => itemKeranjangUserStorage.id);
+      // cocokan idx item dgn id yg ada di localstorage
+      let index = itemKeranjangUserStorage.findIndex((id) => id == idx);
+      this.keranjangUser.splice(index, 1);
+      // hapus dan reload page
       const parsed = JSON.stringify(this.keranjangUser);
       localStorage.setItem("keranjangUser", parsed);
+      window.location.reload();
     },
   },
   mounted() {
@@ -96,6 +103,13 @@ export default {
         localStorage.removeItem("keranjangUser");
       }
     }
+  },
+  computed: {
+    totalHarga() {
+      return this.keranjangUser.reduce(function (items, data) {
+        return items + data.price;
+      }, 0);
+    },
   },
 };
 </script>
